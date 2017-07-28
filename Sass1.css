@@ -1,0 +1,39 @@
+Before we dive into writing Sass, let's first learn how to compile it to CSS by typing the following command in the terminal and pressing enter:
+sass main.scss main.css
+
+The sass command above takes in two arguments:
+The input (main.scss)
+The location of where to place that output (main.css)
+
+
+Nesting is the process of placing selectors inside the scope of another selector:
+In Sass, it's helpful to think of the scope of a selector as any of the code between its opening { and closing } curly brackets.
+.parent {
+  color: blue;
+  .child {
+    font-size: 12px;
+  }
+}
+
+The above SCSS would compile to the following, equivalent CSS:
+.parent {
+  color: blue;
+}
+
+.parent .child {
+    font-size: 12px;
+}
+
+Nesting allows you to see the clear DOM relationship between two selectors while also removing the repetition observed in CSS.
+
+
+In SCSS, nesting is not limited only to selectors. You can also nest common CSS properties if you append a : colon suffix after the name of the property.
+For example, the following SCSS code:
+.parent {
+  font : {
+    family: Roboto, sans-serif;
+    size: 12px;
+    decoration: none;
+  }
+}
+

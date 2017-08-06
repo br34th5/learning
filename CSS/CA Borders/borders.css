@@ -1,0 +1,39 @@
+border-style property. This property can take on one of the following values:
+
+solid - border is a solid line.
+dashed - border is a series of lines or dashes.
+dotted - border is a series of square dots.
+double - border is two solid black lines.
+groove - border is a groove (or carving).
+inset - border appears to cut into the screen.
+outset - border appears to pop out of the screen.
+ridge - border appears as a picture frame.
+hidden or none - no border.
+
+p {
+  border-style: solid;
+  border-width: 3px 1px 2px 1px;
+}
+
+p {
+  border-style: solid;
+  border-left-width: 4px;
+}
+
+The border-color property accepts RGB(a) colors, and hex colors.
+
+The corners of an element's border box can be modified with the border-radius property.
+
+CODE BLOAT: 
+
+div.container {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(22, 77, 100);
+}
+
+-----> 
+
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+}

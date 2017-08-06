@@ -1,0 +1,42 @@
+The HTML video element can add video to a webpage.
+
+<video width="320" height="240" controls>
+  <source src="video-url.mp4" type="video/mp4">
+</video>
+
+<meta charset="utf-8"/>: Tells the web browser which character set to use. In this case, the character set is "utf-8".
+
+
+<div class="header">
+  <h2>Heading</h2>
+  <p>Paragraph</p>
+</div>
+
+.header {
+  color: #ffffff; 
+}
+
+Here, the div is the parent element and the h2 and p are children. CSS styles applied to the header class selector will automatically apply to the h2 and the p.
+As a result of this code, child elements of divs with the header class will have a font color of #ffffff (white).
+
+Ids have greater specificity than classes. If an HTML element is using both id and class attributes, the CSS rule for the id will take precedence over that of the class.
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+By first setting position: relative;, you can then use the CSS properties top, left, bottom, and right to shift an element away from where it would have normally appeared on the page.
+
+.container {
+  position: relative; 
+  top: 10px; 
+  left: 20px;
+}
+
+.contact-btn a:active {
+  top: 2px;
+}
+

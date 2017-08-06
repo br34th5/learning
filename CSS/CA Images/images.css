@@ -1,0 +1,38 @@
+For images to center properly, they must behave as block-level elements.
+
+img.leaf {
+  width: 300px;
+  height: 200px; 
+  display: block;
+}
+
+Images can also be added to the backgrounds of HTML elements with the background-image property.
+
+body {
+  background-image: url("https://www.example.com/leaf.jpg");
+}
+
+When a background image is not repeated, its position can be modified with the background-position property.
+
+p {
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+The code in the example above can be shortened using the background property.
+
+p {
+  background: url("#") no-repeat right center;
+}
+
+To modify a background image's size, you can use the background-size property:
+cover - expands the image as large as possible to cover the full width or height of a container
+contain - expands the image as large as possible, but the image will be letterboxed, which means it won't cover the full width or height of a container.
+
+The background-attachment property can take one of two values:
+scroll - this value allows the image to move up and down as a user scrolls on the web page (this is the default value).
+fixed - this value pins the image's position on the page
+
+When an image communicates important information, you can use the <img> element and style the image using CSS, if needed.
+When an image is intended to style a web page, you can use the background property and further style it with CSS.

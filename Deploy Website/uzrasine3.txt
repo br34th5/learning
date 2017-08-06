@@ -1,0 +1,10 @@
+Congratulations! You now have a static site with a custom domain name published on the Internet.
+
+Let's review the process we followed in this lesson:
+
+Created an AWS account and accessed Route 53
+Purchased a domain name
+Accessed the Hosted Zone for that domain name
+Confirmed the NS (name server) records
+Created A and CNAME records
+Used dig to display information about your domain name

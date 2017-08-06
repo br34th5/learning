@@ -1,0 +1,91 @@
+p {
+  border: 1px solid #23AD44;
+  margin: 20px;
+}
+
+The code in the example above will place 20 pixels of space on the outside of the paragraph's box, on all four sides. 
+This means that other HTML elements on the page cannot come within 20 pixels of the paragraph.
+
+An understanding of the margin property is crucial in order to later understand element positioning in the browser.
+
+div.headline {
+  width: 400px;
+  margin: auto;
+}
+When the margin property is set to auto, the element being styled will center in the page.
+
+Note: When margin: auto is used, an element will center relative to its container. For example, the div in the example above was centered relative to the width of the body. 
+If the div was contained in larger div, the smaller div would center relative to the width of the larger div. 
+This is important to keep in mind when attempting to center nested elements, like divs.
+
+Many developers choose to reset these default values so that they can truly work with a clean slate.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+li {
+  display: inline-block;
+}
+
+The default value of the box-sizing property is content-box.
+The value for the new box model is border-box.
+The border-box model is not affected by border thickness or padding
+
+The clear property specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
+
+left — the left side of the element will not touch any other element within the same containing element.
+right — the right side of the element will not touch any other element within the same containing element.
+both — neither side of the element will touch any other element within the same containing element.
+none — the element can touch either side.
+
+When percentages are used to set padding and margin, however, they are calculated based only on the width of the parent element.
+p {
+  background: url("#") no-repeat right center;
+}	
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  position: relative; 
+  top: 10px; 
+  left: 20px;
+}
+
+--
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+Any part of the image that overflows out of the container will be hidden from view. 
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+--
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+
+Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content.
+ The dimensions at which the layout breaks or looks odd become your media query breakpoints. 
+ Within those breakpoints, we can adjust the CSS to make the page resize and reorganize.
+
+ https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png

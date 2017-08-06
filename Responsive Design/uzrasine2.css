@@ -1,0 +1,77 @@
+@media only screen and (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
+}
+
+When the screen is less than 480px wide, give the .page-title class a width of 270px.
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* ruleset for 320px - 480px */
+}
+
+
+
+
+@media only screen and (min-width: 320px) { 
+    /* ruleset for 320px - 479px */
+}
+
+@media only screen and (min-width: 480px) { 
+    /* ruleset for > 480px */
+}
+
+The first media query in the example above will apply CSS rules when the size of the screen meets or exceeds 320 pixels.
+The second media query will apply CSS rules when the size of the screen meets or exceeds 480 pixels, meaning that it will override the CSS rules present in the first media query.
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
+
+
+To target by resolution, we can use the min-resolution and max-resolution media features:
+
+@media only screen and (min-resolution: 300dpi) {
+    .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+
+
+
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    /* CSS ruleset */
+}
+By placing the and operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+    font-size: 20px;
+  }
+}
+
+
+----
+If only one of multiple media features in a media query must be met, media features can be separated in a comma (,) separated list.
+
+For example, if we needed to apply a style when only one of the below is true:
+
+The screen is more than 480 pixels wide
+The screen is in landscape mode
+We could write:
+
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+
+If a page is wider, it's considered landscape, and if a page is taller, it's considered portrait.
+
+
+--
+Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content.
+ The dimensions at which the layout breaks or looks odd become your media query breakpoints. 
+ Within those breakpoints, we can adjust the CSS to make the page resize and reorganize.
+
+ https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png

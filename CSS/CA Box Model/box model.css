@@ -1,0 +1,20 @@
+min-width - this property ensures a minimum width for an element's box.
+max-width - this property ensures a maximum width for an element's box.
+or height
+
+p {
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 150px;
+  max-height: 300px;
+  overflow: scroll; 
+}
+
+The overflow property controls what happens to content when it spills, or overflows, outside of its box.
+
+hidden - when set to this value, any content that overflows be hidden from view.
+scroll - when set to this value, a scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling.
+
+* {
+  border: 1px solid rgba(0, 0, 0, 0.3)
+}

@@ -1,0 +1,13 @@
+Fantastic! You now have your site published on the public Internet. You can now navigate to your newly published website in your preferred browser.
+
+The URL for your GitHub Pages site is: your-user-name.github.io, where your-user-name is your actual GitHub username.
+
+Let's review what you accomplished in this unit:
+
+Created a GitHub account
+Created the required GitHub repo
+Used Git to add, commit, and push your website to the repo
+Succesfully used GitHub Pages to deploy your site to the Internet!
+Note that your site's URL matches your repo's name — a GitHub Pages requirement. But what if you want to change the URL to a custom URL?
+
+In the next unit, you'll learn how to keep your site hosted on GitHub, but change the URL to something besides the GitHub Pages default.

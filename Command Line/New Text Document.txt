@@ -1,0 +1,5 @@
+$ cat oceans.txt > continents.txt
+> takes the standard output of the command on the left, and redirects it to the file on the right. Here the standard output of cat oceans.txt is redirected to continents.txt.
+
+$ cat glaciers.txt >> rivers.txt
+>> takes the standard output of the command on the left and appends (adds) it to the file on the right. You can view the output data of the file with cat and the filename.

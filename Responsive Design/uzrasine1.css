@@ -1,0 +1,102 @@
+One unit of measurement you can use in CSS to create relatively-sized content is the em, written as em in CSS.
+Today, the em represents the size of the base font being used. For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser),
+ then 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on.
+
+
+Rem stands for root em. It acts similar to em, but instead of checking parent elements to size font, it checks the root element. The root element is the <html> tag.
+
+Most browsers set the font size of <html> to 16 pixels, so by default rem measurements will be compared to that value. To set a different font size for the root element, you can add a CSS rule.
+
+html {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+
+If you are interested in sizing elements consistently across an entire website, the rem measurement is the best unit for the job. 
+If you're interested in sizing elements in comparison to other elements nearby, then the em unit would be better suited for the job.
+
+
+
+
+.main {
+  height: 300px;
+  width: 500px;
+}
+
+.main .subsection {
+  height: 50%;
+  width: 50%;
+}
+In the example above, .main and .subsection each represent divs. The .subsection div is nested within the .main div.
+Note that the dimensions of the parent div (.main) have been set to a height of 300 pixels and a width of 500 pixels.
+
+Note: Because the box model includes padding, borders, and margins, setting an element's width to 100% may cause content to overflow its parent container.
+
+!!! When percentages are used to set padding and margin, however, they are calculated based only on the width of the parent element. !!!
+If The child element does have a set height -  This causes the height of its parent container to stretch to that height.
+
+What will happen to the contents of an element if the max-height property is set too low for that element?
+ It's possible that content will overflow outside of the element, resulting in content that is not legible.
+
+
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+In the example above, .container represents a container div. It is set to a width of 50% (half of the browser's width, in this example) and a height of 200 pixels. 
+Setting overflow to hidden ensures that any content with dimensions larger than the container will be hidden from view.
+
+The second CSS rule ensures that images scale with the width of the container.
+ The height property is set to auto, meaning an image's height will automatically scale proportionally with the width.
+
+Finally, the last line will display images as block level elements (rather than inline-block, their default state).
+ This will prevent images from attempting to align with other content on the page (like text), which can add unintended margin to the images.
+
+
+
+.image-container {
+  overflow: hidden;
+}
+
+At this point, the images partially display. What we've done is constrain them to the dimensions of their container (.image-container).
+Any part of the image that overflows out of the container will be hidden from view. 
+
+.image-container img {
+  max-width: 100%;
+}
+
+This will ensure the full image is always displayed.
+
+Next, we'll want to make sure the images automatically remain in proportion when the browser is resized:
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+Display-block will instruct the images to behave as block-level elements and facilitate scaling
+
+
+Background images of HTML elements can also be scaled responsively using CSS properties.
+
+body {
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

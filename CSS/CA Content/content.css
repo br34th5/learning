@@ -1,0 +1,66 @@
+The space between the contents of a box and the borders of a box is known as padding.
+
+When padding is set for a box (as in the example above) it will be added to the width and height of a box, increasing the dimensions of the box
+
+p {
+  border: 3px solid #XXXXXX;
+  padding: 5px 10px 5px 10px;
+}
+
+shortcut top and bottom, right and left
+
+p {
+  border: 3px solid #XXXXXX;
+  padding: 5px 10px;
+}
+
+
+The margin refers to the space directly outside of the box
+
+p {
+  border: 1px solid #23AD44;
+  margin: 20px;
+}
+
+The code in the example above will place 20 pixels of space on the outside of the paragraph's box, on all four sides. 
+This means that other HTML elements on the page cannot come within 20 pixels of the paragraph.
+
+div.headline {
+  width: 400px;
+  margin: auto;
+}
+
+When the margin property is set to auto, the element being styled will center in the page.
+
+Note: When margin: auto is used, an element will center relative to its container. For example, the div in the example above was centered relative to the width of the body. 
+If the div was contained in larger div, the smaller div would center relative to the width of the larger div. 
+This is important to keep in mind when attempting to center nested elements, like divs.
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px 10px;
+  margin: auto;
+}
+
+Note that the #banner-content selector already includes a width for the div (60%), less than the full width of its containing element (the banner div in this case).
+
+Many developers choose to reset these default values so that they can truly work with a clean slate.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+Modifying the display property of an element can help achieve a desired layout for a web page. The display property can take on one of four values:
+
+inline - causes block-level elements (like a div) to behave like an inline element (like a link).
+block - causes inline elements (like a link) to behave like a block element (like a div).
+inline-block - causes block-level elements to behave like an inline element, but retain the features of a block-level element.
+none - removes an element from view. The rest of the web page will act as if the element does not exist.
+
+li {
+  display: inline-block;
+}

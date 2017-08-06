@@ -1,0 +1,49 @@
+/* When the name of a typeface consists of more than one word, it must be enclosed in double quotes (otherwise it will not be recognized), like so: */
+
+h2 {
+  font-family: "Courier New";
+}
+
+h1 {
+  font-family: Garamond;
+}
+
+/* c */
+
+/* Two types of fonts*/
+
+Serif - the letters in these fonts have extra details on the ends of each letter. (Times New Roman)
+Sans-Serif - the letters in these fonts do not have extra details on the ends of each letter. Instead, letters have straight, flat edges. (Arial)
+
+/* To use fallback fonts, the following syntax is required:
+Fallback fonts in this example are; Times -> any serif font that is installed on user's computer. */
+
+h1 {
+  font-family: Garamond, Times, serif;
+}
+
+
+/* To use a Google Font, you can use a <link> element */
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet" >
+</head>
+
+p {
+  line-height: 1.5em;
+}
+
+h1 {
+  word-spacing: 0.3em;
+}
+
+h1 {
+  letter-spacing: 0.3em;
+}
+
+/* Font weights can be set to 100 (thin), 200, 300, 400 (normal weight), 500, 600, 700, 800, or 900 (bold). */
+
+  font-weight: 100;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: right;

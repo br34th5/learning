@@ -1,0 +1,50 @@
+The position property can take one of four values:
+
+static - the default value (it does not need to be specified)
+relative ()
+absolute (other elements act like this object doesn't exist)
+fixed    (even if you scroll down - you see the object)
+
+Relative positioning
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+When an element's position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page.
+	When an element's position is set to absolute, the element will scroll out of view when a user scroll
+
+.header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  overflow-y: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+We can fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed.
+
+The z-index property controls how far "back" or how far "forward" an element should appear on the web page.
+	Depending on their values, the integers instruct the browser on the order in which elements should be displayed on the web page.
+
+The float property can be set to one of two values:
+
+left - this value will move, or float, elements as far left as possible.
+right - this value will move elements as far right as possible.
+
+This works for static and relative positioned elements.
+
+When multiple floated elements have different heights, it can affect their layout on the page.
+ Specifically, elements can "bump" into each other and not allow other elements to properly move to the left or right.
+
+ The clear property specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
+
+left — the left side of the element will not touch any other element within the same containing element.
+right — the right side of the element will not touch any other element within the same containing element.
+both — neither side of the element will touch any other element within the same containing element.
+none — the element can touch either side.

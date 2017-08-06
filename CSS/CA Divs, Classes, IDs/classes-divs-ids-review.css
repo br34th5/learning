@@ -1,0 +1,39 @@
+It's possible, however, for multiple elements on a web page to share a specific styling, but for one of those elements to differ slightly.
+
+.breaking {
+  font-family: Georgia, Times, serif;
+}
+
+p.breaking {
+  line-height: 1.3em;
+}
+
+The .breaking selector targets all elements with a class of breaking.
+The p.breaking selector targets only <p> elements with a class of breaking.
+
+.first, .last {
+  font-size: 20px;
+}
+
+Multiple classes
+
+<h1 class="book domestic">The Way of the Deep</h1>
+
+<h1 class="book foreign">A Night in the Sky</h1>
+
+.book {
+  font-family: Georgia, serif;
+}
+
+.domestic {
+  font-color: #0902CC;
+}
+
+.foreign {
+  font-color: #B097DD;
+}
+
+Div
+
+You can think of the div as a box, or container, that groups elements that belong together.
+For example, a <div> can be used to group together all of the elements that make up the navigation for a web page.

@@ -1,0 +1,22 @@
+CSS Basics
+
+Creating a link in new tab
+<p><a href="https://www.google.lt/" target="_blank">Link to the google in new tab</a></p>
+
+
+Importing new google font
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+p {
+	font-family: 'Anton', sans-serif;
+}
+
+
+Aligning fonts
+.center {
+
+		text-align: center;
+	}
+
+<p class="center">Centered text</p>
+

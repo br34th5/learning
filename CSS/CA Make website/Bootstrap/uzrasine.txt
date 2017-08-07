@@ -1,4 +1,0 @@
-Bootstrap is a popular CSS framework with prewritten CSS rules designed to help you build webpages faster.
-
-One of the reasons Bootstrap and frameworks like it are so popular is because they offer !!grids.!!
-Using a grid, you can customize responsive page layouts quickly and reliably.

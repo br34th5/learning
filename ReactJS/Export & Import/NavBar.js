@@ -1,5 +1,6 @@
 import React from 'react';
 
+// exporting a component!
 export class NavBar extends React.Component {
   render() {
     const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];

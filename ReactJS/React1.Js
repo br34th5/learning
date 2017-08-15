@@ -41,7 +41,6 @@ To render a JSX expression means to make it appear onscreen.
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Copy code here:
 ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'));
 
 1. ReactDOM is the name of a JavaScript library.
